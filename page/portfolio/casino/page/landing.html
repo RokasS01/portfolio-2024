@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino • Bienvenue</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../image/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/landing.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+
+<div class="back-to-portfolio" id="closeBack">
+    <div class="content">
+        <button class="retour"><a href="../../../../index.html">Portfolio</a></button>
+        <button class="close" onclick="closeBack()">Fermer</button>
+    </div>
+</div>
+
+
+<body>
+
+    <div class="loader_bg">
+        <div class="loader">
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <nav class="header">
+        <input type="checkbox" id="check">
+        <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+        <img src="../image/logo.png">
+        <ul class="headul">
+            <li><a href='landing.html'>Casino</a></li>
+            <li><a href='shop.html'>Boutique</a></li>
+            <li><a href="../index.html" class="connexion">Profil</a></li>
+        </ul>
+    </nav>
+
+    <section class="products" id="products">
+
+        <h1 class="heading"> Bienvenue <span>Pseudo</span>
+        </h1>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="../image/jeux/machine_sous.png" alt="">
+                    <h3>Machine à sous</h3>
+                    <div class="price"> Notes : 4 / 5 Etoiles </div>
+                    <a href="machine_a_sous.html" class="panier">Jouer</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../image/jeux/wild_beach.png" alt="">
+                    <h3>Chicken Mystake</h3>
+                    <div class="price"> Notes : 4.5 / 5 Etoiles </div>
+                    <a href="chicken.html" class="panier">Jouer</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../image/jeux/tictac.png" alt="">
+                    <h3>A Prendre ou à Laisser</h3>
+                    <div class="price"> En développement </div>
+                    <a href="#" class="panier">Jouer</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="../image/jeux/aviator.png" alt="">
+                    <h3>Aviator Game</h3>
+                    <div class="price"> En développement </div>
+                    <a href="#" class="panier">Jouer</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../image/jeux/mega_wheel.png" alt="">
+                    <h3>Mega Wheels</h3>
+                    <div class="price"> En développement </div>
+                    <a href="#" class="panier">Jouer</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../image/jeux/gem-roulette.png" alt="">
+                    <h3>Gem Roulette</h3>
+                    <div class="price"> En développement </div>
+                    <a href="#" class="panier">Jouer</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Copyright &copy; Casino - Fr 2022</p>
+        <p class="realise">Réalisé par RokasS</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../js/landing.js"></script>
+	<script src="../js/loader.js"></script>
+
+</body>
+
+<script>
+
+    function closeBack() {
+      var backToPortfolio = document.getElementById("closeBack");
+      backToPortfolio.classList.add("hidden");
+    }
+</script>
+
+</html>

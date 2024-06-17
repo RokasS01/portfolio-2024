@@ -1,0 +1,204 @@
+header h1 {
+    color: var(--text-color);
+}
+
+@media(max-width: 1275px) {
+    header .icon-link i {
+        color: var(--text-color);
+    }
+
+    header .icon-link:hover i {
+        color: var(--background-color);
+    }
+
+    header .icon-link::before {
+        background-color: var(--primary-color);
+    }
+    .labelNav #btn {
+        color: var(--text-color);
+    }
+
+    header h1 {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--text-color);
+    }
+}
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+}
+
+.aboutme .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.aboutme .title {
+    text-align: center;
+    margin: 0 auto 0 auto;
+    text-transform: capitalize;
+}
+
+.aboutme .title h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 15px;
+}
+
+.aboutme .on-profile-picture {
+    background-color: var(--background-color);
+    padding: 30px;
+    border-radius: 50%;
+    border: 8px solid var(--primary-color);
+    transition: background .3s, color .3s;
+}
+
+.aboutme .profile-picture {
+    position: relative;
+    width: 275px;
+    height: 275px;
+    background: var(--primary-color);
+    padding: 10px;
+    border: 12px solid var(--primary-color);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.aboutme .profile-picture img {
+    width: 380px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.aboutme .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.aboutme .info h2 {
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.aboutme .info h3 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.aboutme .info p {
+    font-size: 12px;
+    padding: 10px;
+    max-width: 500px;
+}
+
+
+.aboutme .button {
+    width: 175px;
+    height: 55px;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.aboutme .button span {
+    z-index: 1;
+    position: relative;
+}
+
+.aboutme .button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    transform: translate3d(-50%,-50%,0) scale3d(0,0,0);
+    transition: opacity .4s cubic-bezier(.19,1,.22,1),transform .75s cubic-bezier(.19,1,.22,1);
+    background-color: var(--primary-color-hover);
+    opacity: 0;
+}
+
+.aboutme .button:hover span {
+    color: hsl(222, 100%, 95%);
+}
+
+.aboutme .button:hover::before {
+    opacity: 1;
+    transition-duration: .85s;
+    transform: translate3d(-50%,-50%,0) scale3d(1.2,1.2,1.2);
+}
+
+.aboutme .info .skills {
+    margin-top: 50px;
+}
+
+.aboutme .info .skills h3{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.aboutme .info .skills .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 475px;
+}
+
+.aboutme .info .skills .gallery img{
+    width: 40px;
+    margin: 10px;
+}
+
+@media(max-width: 1275px) {
+    .aboutme .profile-picture {
+        width: 200px;
+        height: 200px;
+    }
+
+    .aboutme .profile-picture img {
+        width: 270px;
+    }
+
+    .aboutme .content{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .aboutme .info {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .aboutme .info .skills .gallery {
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+a:link {
+    color: white;
+}
+
+:root {
+    --orange: rgb(214, 79, 0);
+    --black: #22242d;
+    --white: #fff;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--white);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+body {
+    background-color: #22242d;
+}
+
+/* • Header • */
+
+.header {
+    z-index: 30;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    background-color: #181a1e;
+	top: 0px;
+}
+
+.header img {
+    width: 70px;
+	position: absolute;
+    top: 6px;
+    left: 8%;
+    cursor: pointer;
+}
+
+.header .headul {
+    float: right;
+    margin-right: 25px;
+	height: 100%;
+	background-color: #181a1e;
+}
+
+.header .headul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+    height: 79px;
+}
+
+.header ul li a {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+.header .headul li a:hover {
+    color: orange;
+}
+
+.header .connexion {
+    padding: 9px 25px;
+    background-color: rgb(214, 79, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .connexion:hover {
+    color: #22242d;
+}
+
+label #btn,
+label #cancel {
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1118px) {
+    .header img {
+        left: 6%;
+    }
+}
+
+@media (max-width: 944px) {
+    .header img {
+        left: 3%;
+        top: 15px;
+        width: 50px;
+    }
+    .header .headul li a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 860px) {
+    label #btn {
+        display: block;
+    }
+
+    .headul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 10;
+    }
+    .connexion .header .headul {
+        position: fixed;
+        width: 100%;
+        height: 1000px;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    .header .headul li {
+        display: block;
+        margin: 50px 0;
+        width: 100%;
+        line-height: 30px;
+    }
+    .header .headul li a {
+        font-size: 20px;
+    }
+    #check:checked~.headul {
+        left: 0;
+    }
+    #check:checked~label #btn {
+        display: none;
+    }
+    #check:checked~label #cancel {
+        display: block;
+    }
+}
+
+/* • Footer • */
+
+footer {
+    width: 100%;
+    height: 80px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+    background: #181a1e;
+}
+
+footer p {
+    background-color: #181a1e;
+}
+
+.realise {
+    font-size: 13px;
+    color: var(--light-color);
+}
+
+/* • Contenu • */
+
+.play {
+    width: 600px;
+    height: 600px;
+    background-color: #181a1e;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	margin-top: 150px;
+
+    border: 0.1rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .1rem #fff,
+                0 0 .1rem #fff,
+                0 0 1rem #fe8513,
+                0 0 0.5rem #fe6913,
+                0 0 2rem #fe6913,
+                inset 0 0 1rem #fe5d13;
+}
+
+@media (max-width: 562px) {
+    .play {
+        box-shadow: 0 0 .1rem #fff,
+        0 0 .05rem #fff,
+        0 0 .5rem #fe8513,
+        0 0 0.25rem #fe6913,
+        0 0 1rem #fe6913,
+        inset 0 0 .5rem #fe5d13;
+    }
+}
+
+.cases {
+	width: 16.7%;
+    height: 16.7%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin: 1%;
+    border-radius: 20%;
+    position: relative;
+}
+
+label {
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.flip-card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease-in-out;
+	z-index: 1;
+}
+
+.flip-card .front, .flip-card .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgb(56, 56, 56);
+	backface-visibility: hidden;
+	border-radius: 15px;
+}
+
+.flip-card .back {
+	transform: rotateY(180deg);
+	background: rgb(255, 93, 52);
+}
+
+.flip-card {
+	transform: rotateY(2deg);
+}
+
+input {
+	display: none;
+}
+
+.front img, .back img {
+	width: 100%;
+	height: 100%;
+}
+
+.miseBorder {
+    position: relative;
+    width: 600px;
+    height: 100px;
+    background: #181a1e;
+    margin: 45px auto;
+    border-radius: 500px;
+
+    border: 0.1rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .1rem #fff,
+                0 0 .1rem #fff,
+                0 0 1rem #fe8513,
+                0 0 0.5rem #fe6913,
+                0 0 2rem #fe6913,
+                inset 0 0 1rem #fe5d13;
+}
+
+@media (max-width: 562px) {
+    .miseBorder {
+        box-shadow: 0 0 .1rem #ffffff,
+        0 0 .05rem #fff,
+        0 0 .5rem #fe8513,
+        0 0 0.25rem #fe6913,
+        0 0 1rem #fe6913,
+        inset 0 0 .5rem #fe5d13;
+    }
+}
+
+.miseInput {
+    display: block;
+    position: absolute;
+    width: 170px;
+    height: 43px;
+    background-color: rgba(0,0,0,.1);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 10;
+    border: 1px solid #fff;
+
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+}
+
+.containerButton {
+    position: absolute;
+    width: 170px;
+    height: 43px;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.centerButton {
+    width: 170px;
+    height: 43px;
+    position: absolute;
+}
+
+
+.regleButton {
+    width: 170px;
+    height: 43px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #ffb991;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+.regleButton:hover {
+    transition: 1s ease-in-out;
+    background: #da7b4f;
+}
+  
+.regleButton:hover svg {
+    stroke-dashoffset: -480;
+}
+  
+.regleButton span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+  .regleDIV {
+    
+    position: absolute;
+    background: rgb(255, 114, 49);
+    width: 170px;
+    height: 43px;
+    z-index: 3;
+    margin-top: 150px;
+    opacity: 0;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.regleDIV h2 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 50px 0 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f04704;
+    display: inline-block;
+}
+
+.regleDIV p {
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: "Poppins";
+    color: rgb(255, 255, 255);
+}
+
+.regleDIV .closeButton {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 80px;
+    border-radius: 20px;
+    border: 2px solid rgb(209, 209, 209);
+    color: rgb(71, 71, 71);
+    font-size: 15px;
+}
+
+.regleDIV .closeButton:hover {
+    width: 225px;
+    height: 45px;
+    color: rgb(255, 255, 255);;
+    background-color: rgb(182, 182, 182);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .regleDIV {
+        width: 500px;
+        height: 650px;
+    }
+
+    .regleDIV .closeButton {
+      font-size: 15px;
+      width: 150px;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .regleDIV {
+        width: 400px;
+        height: 700px;
+    }
+}
+/* Firefox */
+.miseInput[type=number] {
+    -moz-appearance: textfield;
+}
+ 
+/* Chrome */
+.miseInput::-webkit-inner-spin-button,
+.miseInput::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
+}
+ 
+/* Opéra*/
+.miseInput::-o-inner-spin-button,
+.miseInput::-o-outer-spin-button { 
+	-o-appearance: none;
+	margin:0
+}
+
+.mult {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    top: 40%;
+    left: 85%;
+}
+
+@media (max-width:860px) {
+    .play {
+        width: 650px;
+        height: 650px;
+    }
+
+    .miseBorder {
+        width: 650px;
+        height: 90px;
+    }
+}
+
+@media (max-width:670px) {
+    .play {
+        width: 550px;
+        height: 550px;
+    }
+
+    .miseBorder {
+        width: 550px;
+        height: 80px;
+    }
+
+    .containerButton {
+        width: 150px;
+        height: 35px;
+    }
+
+    .centerButton {
+        width: 150px;
+        height: 35px;       
+    }
+
+    .regleButton {
+        width: 150px;
+        height: 35px;
+    }
+
+    .miseInput {
+        width: 150px;
+        height: 35px;
+    }
+
+    .mult {
+        font-size: 16px;
+        top: 36%;
+        left: 85%;
+    }
+}
+
+@media (max-width:560px) {
+    .play {
+        width: 400px;
+        height: 400px;
+    }
+
+    .miseBorder {
+        width: 400px;
+        height: 70px;
+    }
+    .containerButton {
+        width: 100px;
+        height: 27px;
+
+        left: 65%
+    }
+
+    .centerButton {
+        width: 100px;
+        height: 27px;    
+    }
+
+    .regleButton {
+        width: 100px;
+        height: 27px;
+    }
+
+    .regleButton span {
+        font-size: 15px;
+    }
+
+    .miseInput {
+        width: 100px;
+        height: 27px;
+        left: 35%;
+        font-size: 15px;
+    }
+
+    .mult {
+        font-size: 14px;
+        top: 36%;
+        left: 83%;
+    }
+    
+}
+
+@media (max-width:410px) {
+    .play {
+        width: 250px;
+        height: 250px;
+    }
+
+    .miseBorder {
+        width: 250px;
+        height: 60px;
+    }
+
+    .containerButton {
+        width: 80px;
+        height: 23px;
+
+        left: 60%
+    }
+
+    .centerButton {
+        width: 80px;
+        height: 23px;  
+    }
+
+    .regleButton {
+        width: 80px;
+        height: 23px;
+    }
+
+    .regleButton span {
+        font-size: 15px;
+    }
+
+    .miseInput {
+        width: 80px;
+        height: 23px;
+        left: 25%;
+        font-size: 15px;
+    }
+
+    .mult {
+        font-size: 12px;
+        top: 36%;
+        left: 80%;
+    }
+
+}

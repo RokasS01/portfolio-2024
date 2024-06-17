@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino • Connexion</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../image/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+
+<div class="back-to-portfolio" id="closeBack">
+    <div class="content">
+        <button class="retour"><a href="../../../index.html">Portfolio</a></button>
+        <button class="close" onclick="closeBack()">Fermer</button>
+    </div>
+</div>
+
+
+<body>
+
+    <nav class="header">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <img src="../image/logo.png">
+        <ul class="headul">
+            <li><a href='landing.html'>Casino</a></li>
+            <li><a href='shop.html'>Boutique</a></li>
+            <li><a href="../index.html" class="connexion">Profil</a></li>
+        </ul>
+    </nav>
+
+<div class="login-form">
+    <div class="wrapper">
+        <div class="titre">Inscription</div>
+        <form action="" method="post">
+            <div class="form-group">
+                <input type="text" name="pseudo" class="form-control" required="required" autocomplete="off" placeholder="">
+                <label>Pseudo</label>
+            </div>
+            <div class="form-group">
+            <input type="email" name="email" class="form-control" required="required" autocomplete="off" placeholder="">
+                <label>Adresse Mail</label>
+            </div>
+            <div class="form-group">
+            <input type="password" name="password" class="form-control" placeholder="" required="required" autocomplete="off">
+                <label>Mot de passe</label>
+            </div>
+            <div class="form-group">
+            <input type="password" name="password_retype" class="form-control" required="required" autocomplete="off" placeholder="">
+                <label>Confirmer le Mot de passe</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Inscription">
+            </div>
+            <div class="inscription">
+                Déjà inscrit ? <a href="../index.html">Connectez vous !</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright &copy; Casino - Fr 2022</p>
+    <p class="realise">Réalisé par RokasS</p>
+</footer>
+
+<script src="../js/loader.js"></script>
+<script>
+
+    function closeBack() {
+      var backToPortfolio = document.getElementById("closeBack");
+      backToPortfolio.classList.add("hidden");
+    }
+</script>
+</body>
+</html>

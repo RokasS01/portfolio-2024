@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino • Machine à sous</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="../image/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/machine_a_sous.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+
+    <div class="loader_bg">
+        <div class="loader">
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <nav class="header">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <img src="../image/logo.png">
+        <ul class="headul">
+            <li><a href='landing.html'>Casino</a></li>
+            <li><a href='shop.html'>Boutique</a></li>
+            <li><a href="../index.html" class="connexion">Profil</a></li>
+        </ul>
+    </nav>
+
+<section class="content" id="content">
+    <h1 id="machineTitle">Machine à sous</h1>
+    <div class="machine" id="machine">
+        <div class="manche"></div>
+        <button class="lancer" type="button" onclick="jeu();"></button>
+    </div>
+    <div class="container" id="container">
+        <div class="slot-nbr">
+            <div class="slot-img">
+                <img class="numero" src="../image/machine/0.png" alt="0"/>
+            </div>
+        </div>
+        <div class="slot-nbr">
+            <div class="slot-img">
+                <img class="numero" src="../image/machine/1.png" alt="1"/>
+            </div>
+        </div>
+        <div class="slot-nbr">
+            <div class="slot-img">
+                <img class="numero" src="../image/machine/2.png" alt="2"/>
+            </div>
+        </div>
+    </div>
+    <input class="saisirMise" type="number" placeholder="Saisir votre mise" style="-moz-appearance: textfield" id="mise" min="0" max="100" required>
+    <div class="regleDIV" id="regleDIV">
+        <h2>Regles</h2>
+        <p>- Initialement, il y a 1000 jetons dans le bac de la machine.</p>
+        <p>- Vous possedez initialement 100 jetons.</p>
+        <p>- Pour lancer le jeu vous devez insérer dans une mise comprise entre 0 et 100.</p>
+        <p>- Si les trois chiffres du rouleau sont identiques et sont 9 alors vous recevez le BINGO !</p>
+        <p>- Sinon vous recevez 6 fois votre mise. </p>
+        <p>- Si, parmit les 3 chiffres, il y en a 2 qui sont identiques alors vous recevez 3 fois votre mise. </p>
+        <p>- Si aucun des chiffres n'est identiques alors vous ne recevez rien !</p>
+        <p>- Le jeu s'arrête quand le nombre total de jetons dans le bac est inférieur à 500 ou vous fermez la page </p>
+        <button class="closeButton" onclick="regles();">Fermer</button>
+    </div>
+</section>
+
+<div class="containerButton" id="containerButton">
+    <div class="centerButton">
+      <button class="regleButton" onclick="regles();">
+        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+        </svg>
+        <span>Règles</span>
+      </button>
+    </div>
+</div>
+
+<div class="panel" id="panel">
+    <section class="content_2">
+        <h1>
+            Mise = <span id="miseSpan">0</span>
+        </h1>
+        <h1>
+            Banque = <span id="banqueSpan">1000</span>
+        </h1>
+        <h1>
+            Sous = <span id="sousSpan">100</span>
+        </h1>
+    </section>
+</div>
+
+<footer>
+    <p>Copyright &copy; Casino - Fr 2021</p>
+    <p class="realise">Réalisé par RokasS</p>   
+</footer>
+
+</body>
+
+<script src="../js/loader.js"></script>
+<script src="../js/machine_a_sous.js"></script>
+
+</html>

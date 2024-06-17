@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/logo.jpg" type="image/jpg">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Dashboard - Mathys DC</title>
+</head>
+<body>
+
+<div class="back-to-portfolio" id="closeBack">
+    <div class="content">
+        <button class="retour"><a href="../../../index.html">Portfolio</a></button>
+        <button class="close" onclick="closeBack()">Fermer</button>
+    </div>
+</div>
+
+<nav>
+    <div class="logo-name">
+        <div class="logo-image">
+            <img src="../assets/img/logo.jpg" alt="">
+        </div>
+
+        <span class="logo_name">Dashboard</span>
+    </div>
+
+    <div class="menu-items">
+        <ul class="nav-links">
+            <li><a href="../index.html">
+                <i class="uil uil-bitcoin-circle"></i>
+                <span class="link-name">Banque</span>
+            </a></li>
+            <li><a href="#">
+                <i class="uil uil-dumbbell"></i>
+                <span class="link-name">Musculation</span>
+            </a></li>
+            <li><a href="#">
+                <i class="uil uil-heart-medical"></i>
+                <span class="link-name">Santé</span>
+            </a></li>
+            <li><a href="#">
+                <i class="uil uil-clipboard-notes"></i>
+                <span class="link-name">Tâches</span>
+            </a></li>
+            <li><a href="#">
+                <i class="uil uil-english-to-chinese"></i>
+                <span class="link-name">Portugais</span>
+            </a></li>
+        </ul>
+
+        <ul class="logout-mode">
+            <li>
+                <a href="login.html">
+                    <i class="uil uil-signin"></i>
+                    <span class="link-name">Se connecter</span>
+                </a>
+            </li>
+            
+            <li class="mode">
+                <a href="#">
+                    <i class="uil uil-moon"></i>
+                    <span class="link-name">Thème nuit</span>
+                </a>
+
+                <div class="mode-toggle">
+                    <span class="switch"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section class="dashboard">
+    <section class="wrapper">
+        <div class="form signup">
+            <header style="color: #fff;">Inscription</header>
+            <form action="../php/requete.php" method="post">
+                <input type="text" name="pseudo" placeholder="Pseudo" required />
+                <input type="text" name="email" placeholder="Email" required />
+                <input type="password" name="password" placeholder="Mot de passe" required />
+                <input type="submit" name="signup" value="S'inscrire" />
+            </form>
+        </div>
+
+        <div class="form login">
+            <header>Se connecter</header>
+            <form action="../php/requete.php" method="post">
+                <input type="text" name="loginEmail" placeholder="Email" required />
+                <input type="password" name="loginPassword" placeholder="Mot de passe" required />
+                <input type="submit" name="login" value="Se connecter" />
+            </form>
+        </div>
+    </section>
+</section>
+
+<script>
+    const wrapper = document.querySelector(".wrapper"),
+    signupHeader = document.querySelector(".signup header"),
+    loginHeader = document.querySelector(".login header");
+
+    loginHeader.addEventListener("click", () => {
+        wrapper.classList.add("active");
+    });
+    signupHeader.addEventListener("click", () => {
+        wrapper.classList.remove("active");
+    });
+
+    function closeBack() {
+            var backToPortfolio = document.getElementById("closeBack");
+            backToPortfolio.classList.add("hidden");
+        }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../js/script.js"></script>
+

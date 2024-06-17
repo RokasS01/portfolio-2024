@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/logo.jpg" type="image/jpg">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Dashboard - Mathys DC</title>
+</head>
+
+<div class="back-to-portfolio" id="closeBack">
+    <div class="content">
+        <button class="retour"><a href="../../../index.html">Portfolio</a></button>
+        <button class="close" onclick="closeBack()">Fermer</button>
+    </div>
+</div>
+
+<body>
+
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="assets/img/logo.jpg" alt="">
+            </div>
+
+            <span class="logo_name">Dashboard</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="index.html">
+                        <i class="uil uil-bitcoin-circle"></i>
+                        <span class="link-name">Banque</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil uil-dumbbell"></i>
+                        <span class="link-name">Musculation</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil uil-heart-medical"></i>
+                        <span class="link-name">Santé</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil uil-clipboard-notes"></i>
+                        <span class="link-name">Tâches</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil uil-english-to-chinese"></i>
+                        <span class="link-name">Portugais</span>
+                    </a></li>
+            </ul>
+
+            <ul class="logout-mode">
+                <li>
+                    <a href="page/login.html">
+                        <i class="uil uil-signin"></i>
+                        <span class="link-name">Se connecter</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                        <span class="link-name">Thème nuit</span>
+                    </a>
+
+                    <div class="mode-toggle">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-bitcoin-circle"></i>
+                    <span class="text">Banque</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="blocks">
+            <!-- Compte Courant -->
+            <div class="block compte">
+                <h1>Compte Courant</h1>
+                <h2 class="fondCCJS">2000 €</h2>
+                <p><span class="pos">5%</span>&nbsp;depuis le mois dernier</p>
+                <div class="wave">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#BB86FC" fill-opacity="1"
+                            d="M0,160L21.8,181.3C43.6,203,87,245,131,224C174.5,203,218,117,262,74.7C305.5,32,349,32,393,37.3C436.4,43,480,53,524,74.7C567.3,96,611,128,655,160C698.2,192,742,224,785,240C829.1,256,873,256,916,234.7C960,213,1004,171,1047,176C1090.9,181,1135,235,1178,256C1221.8,277,1265,267,1309,229.3C1352.7,192,1396,128,1418,96L1440,64L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Livret A -->
+            <div class="block livretA">
+                <h1>Livret A</h1>
+                <h2 class="fondLAJS">3000 €</h2>
+                <p><span class="neg">-2%</span>&nbsp;depuis le mois dernier</p>
+                <div class="wave">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#03DAC5" fill-opacity="1"
+                            d="M0,0L21.8,42.7C43.6,85,87,171,131,197.3C174.5,224,218,192,262,197.3C305.5,203,349,245,393,218.7C436.4,192,480,96,524,85.3C567.3,75,611,149,655,176C698.2,203,742,181,785,192C829.1,203,873,245,916,229.3C960,213,1004,139,1047,138.7C1090.9,139,1135,213,1178,208C1221.8,203,1265,117,1309,101.3C1352.7,85,1396,139,1418,165.3L1440,192L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Livret Jeune -->
+            <div class="block livretJeune">
+                <h1>Livret Jeune</h1>
+                <h2 class="fondLJJS">1500 €</h2>
+                <p><span class="null">0%</span>&nbsp;depuis le mois dernier</p>
+                <div class="wave">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#448AFF" fill-opacity="1"
+                            d="M0,288L21.8,266.7C43.6,245,87,203,131,160C174.5,117,218,75,262,74.7C305.5,75,349,117,393,133.3C436.4,149,480,139,524,160C567.3,181,611,235,655,234.7C698.2,235,742,181,785,186.7C829.1,192,873,256,916,245.3C960,235,1004,149,1047,144C1090.9,139,1135,213,1178,245.3C1221.8,277,1265,267,1309,240C1352.7,213,1396,171,1418,149.3L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="canvas">
+            <div class="courbeCompte">
+                <h1>Graphique</h1>
+                <canvas id="myCourbe"></canvas>
+            </div>
+
+            <div class="donutCompte">
+                <h1>Beignet</h1>
+                <canvas id="myDonut"></canvas>
+            </div>
+
+            <div class="traitCompte">
+                <h1>Bar</h1>
+                <canvas id="myTrait"></canvas>
+            </div>
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-calculator-alt"></i>
+                    <span class="text">Comptabilité</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="create">
+            <button class="openModalCreate"><i class="uil uil-plus"></i>Créer</button>
+        </div>
+
+        <div class="tableau">
+            <div class="tableau-data">
+                <!-- Section Inactif -->
+                <div class="data inactif">
+                    <span class="data-title">Inactif</span>
+                    <!-- Exemple de comptes fictifs -->
+                    <div data-id="1" class="data-list in openModalInac"><button>Inactif</button></div>
+                    <div data-id="2" class="data-list ac openModalInac"><button>Actif</button></div>
+                    <div data-id="3" class="data-list in openModalInac"><button>Inactif</button></div>
+                </div>
+
+                <!-- Section Nom -->
+                <div class="data nom">
+                    <span class="data-title">Nom</span>
+                    <!-- Noms fictifs pour les comptes -->
+                    <span class="data-list">Compte Courant</span>
+                    <span class="data-list">Livret A</span>
+                    <span class="data-list">Livret Jeune</span>
+                </div>
+
+                <!-- Section Fonds -->
+                <div class="data fonds">
+                    <span class="data-title">Fond</span>
+                    <!-- Fonds fictifs pour les comptes -->
+                    <span class="data-list">2000 €</span>
+                    <span class="data-list">3000 €</span>
+                    <span class="data-list">1500 €</span>
+                </div>
+
+                <!-- Section Pourcentage -->
+                <div class="data pourcentage">
+                    <span class="data-title">Pourcentage</span>
+                    <!-- Pourcentages de variation fictifs -->
+                    <span class="data-list pos">5%</span>
+                    <span class="data-list neg">-2%</span>
+                    <span class="data-list null">0%</span>
+                </div>
+
+                <!-- Section Mois dernier -->
+                <div class="data fonds">
+                    <span class="data-title openMonth">Mois dernier <i class="uil uil-sync"></i></span>
+                    <!-- Montants fictifs du mois précédent -->
+                    <span class="data-list">1900 €</span>
+                    <span class="data-list">3060 €</span>
+                    <span class="data-list">1500 €</span>
+                </div>
+
+                <!-- Section Création -->
+                <div class="data creation">
+                    <span class="data-title">Création</span>
+                    <!-- Dates de création fictives pour les comptes -->
+                    <span class="data-list">01/01/2022</span>
+                    <span class="data-list">15/03/2023</span>
+                    <span class="data-list">20/06/2021</span>
+                </div>
+
+                <!-- Section Ajouter -->
+                <div class="data ajouter">
+                    <span class="data-title">Ajouter</span>
+                    <!-- Boutons fictifs pour ajouter -->
+                    <div data-id="1" class="data-list openModalAdd"><i class="uil uil-plus-circle"></i></div>
+                    <div data-id="2" class="data-list openModalAdd"><i class="uil uil-plus-circle"></i></div>
+                    <div data-id="3" class="data-list openModalAdd"><i class="uil uil-plus-circle"></i></div>
+                </div>
+
+                <!-- Section Supprimer -->
+                <div class="data supprimer">
+                    <span class="data-title">Supprimer</span>
+                    <!-- Boutons fictifs pour supprimer -->
+                    <div data-id="1" class="data-list openModalSupprBlocked"><i class="uil uil-trash-alt"></i></div>
+                    <div data-id="2" class="data-list openModalSuppr"><i class="uil uil-trash-alt"></i></div>
+                    <div data-id="3" class="data-list openModalSuppr"><i class="uil uil-trash-alt"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="back" id="modal">
+
+            <div class="page-inactif">
+                <h1>Confirmez-vous le changement ?</h1>
+                <p>Si vous confirmez, votre compte sera mis à jour automatiquement</p>
+                <form class="button" action="index.html">
+                    <input type="hidden" name="confInac" value="" id="inputInac">
+                    <button type="submit" class="confirmButton">Je confirme</button>
+                    <button type="button" class="cancelButton">Annuler</button>
+                </form>
+            </div>
+
+            <div class="page-update">
+                <h1>Confirmez-vous le changement ?</h1>
+                <p>Si vous confirmez, votre compte sera mis à jour automatiquement</p>
+                <form class="button" action="index.html">
+                    <input type="hidden" name="confUpdate">
+                    <button type="submit" class="confirmButton">Je confirme</button>
+                    <button type="button" class="cancelButton">Annuler</button>
+                </form>
+            </div>
+
+            <div class="page-suppr">
+                <h1>Confirmez-vous la suppression ?</h1>
+                <p>Si vous confirmez, votre compte sera définitivement effacé</p>
+                <form class="button" action="index.html">
+                    <input type="hidden" name="confSuppr" value="" id="inputSuppr">
+                    <button type="submit" class="confirmButton">Je confirme</button>
+                    <button type="button" class="cancelButton">Annuler</button>
+                </form>
+            </div>
+
+            <div class="page-ajouter">
+                <h1>Ajout du nouveau mois</h1>
+                <form class="button" action="index.html">
+                    <div class="fusion">
+                        <h2>Somme du mois</h2>
+                        <div class="search-box">
+                            <i class="uil uil-search"></i>
+                            <input name="somme" type="text" placeholder="Somme de départ ici ...">
+                            <input type="hidden" name="idcompte" value="" id="inputAdd">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="confirmButton">Je confirme</button>
+                        <button type="button" class="cancelButton">Annuler</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="page-argent">
+                <h1>Ajout d'un nouveau compte</h1>
+                <form action="index.html">
+                    <h2>Nom du compte</h2>
+                    <div class="search-box">
+                        <i class="uil uil-search"></i>
+                        <input name="nom_compte" id="nom_compte" type="text" placeholder="Nom du compte ici ..."
+                            required>
+                    </div>
+                    <h2>Somme de départ</h2>
+                    <div class="search-box">
+                        <i class="uil uil-search"></i>
+                        <input name="somme_depart" id="somme_depart" type="text" placeholder="Somme de départ ici ..."
+                            required>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="confirmButton">Je confirme</button>
+                        <button type="button" class="cancelButton">Annuler</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        // Graphique en courbe
+        const ctxCourbe = document.getElementById('myCourbe').getContext('2d');
+        new Chart(ctxCourbe, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [
+                    {
+                        label: 'Série 1',
+                        data: [1200, 1500, 1800, 1300, 1700, 1400, 1600, 1900, 1500, 1800, 1700, 1600],
+                        borderColor: 'rgb(255, 99, 132)',
+                        fill: false
+                    },
+                    {
+                        label: 'Série 2',
+                        data: [1000, 1300, 1600, 1100, 1500, 1200, 1400, 1700, 1300, 1600, 1500, 1400],
+                        borderColor: 'rgb(54, 162, 235)',
+                        fill: false
+                    },
+                    {
+                        label: 'Série 3',
+                        data: [1100, 1400, 1700, 1200, 1600, 1300, 1500, 1800, 1400, 1700, 1600, 1500],
+                        borderColor: 'rgb(75, 192, 192)',
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        suggestedMin: 1000,
+                        suggestedMax: 2000
+                    }
+                }
+            }
+        });
+
+        // Graphique en beignet
+        const ctxDonut = document.getElementById('myDonut').getContext('2d');
+        new Chart(ctxDonut, {
+            type: 'doughnut',
+            data: {
+                labels: ['Partie 1', 'Partie 2', 'Partie 3'],
+                datasets: [{
+                    data: [2000, 3000, 5000],
+                    backgroundColor: [
+                        'rgb(255, 99, 132)',
+                        'rgb(54, 162, 235)',
+                        'rgb(255, 206, 86)'
+                    ],
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top'
+                    }
+                }
+            }
+        });
+
+        // Graphique en barres
+        const ctxTrait = document.getElementById('myTrait').getContext('2d');
+        new Chart(ctxTrait, {
+            type: 'bar',
+            data: {
+                labels: ['Bar 1', 'Bar 2', 'Bar 3'],
+                datasets: [{
+                    label: 'Contenu des Bars',
+                    data: [3000, 4000, 3500],
+                    backgroundColor: [
+                        'rgb(255, 99, 132)',
+                        'rgb(54, 162, 235)',
+                        'rgb(75, 192, 192)'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'top'
+                    }
+                }
+            }
+        });
+
+
+        function closeBack() {
+            var backToPortfolio = document.getElementById("closeBack");
+            backToPortfolio.classList.add("hidden");
+        }
+
+
+    </script>
+
+</body>
+
+</html>

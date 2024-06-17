@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/png" sizes="16x16" href="image/logo.png">
+        <title>Portfolio • Brunch</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    
+    </head>
+<body>
+
+<div class="back-to-portfolio" id="closeBack">
+    <div class="content">
+        <button class="retour"><a href="../../../index.html">Portfolio</a></button>
+        <button class="close" onclick="closeBack()">Fermer</button>
+    </div>
+</div>
+    
+    
+<header id="head">
+    <div class="header-content">
+        <div class="logo"><img src="image/logo.png" alt="Logo"></div>
+
+        <nav>
+            <input type="checkbox" id="check">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#combos">Combos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <label for="check" class="labelNav">
+                <i class='bx bx-grid-alt' id="btn"></i>
+                <i class='bx bx-x' id="cancel"></i>
+            </label>    
+        </nav>
+    </div>
+</header>
+
+<section class="landing" data-aos="zoom-in" id="home">
+    <h1>Brunch</h1>
+    <h2>14 April - New opening</h2>
+    <div class="learn-more"></div>
+</section>
+
+
+<div class="before-tradition" >
+    <section class="tradition">
+        <div class="content">
+            <h2 data-aos="fade-up">Brunch Tradition</h2>
+            <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus impedit consectetur ullam aperiam quisquam maiores odit? Lorem ipsum dolor sit, elit. Delectus impedit soluta consectetur magnam ullam aperiam quisquam maiores odit?</p>
+        </div>
+    </section>
+</div>
+
+<section class="news">
+    <div class="card" data-aos="fade-up">
+        <h2>0</h2>
+        <h3>New dismis</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum architecto provident distinctio exercitationem ut consequatur</p>
+    </div>
+    
+    <div class="card" data-aos="fade-up">
+        <h2>00</h2>
+        <h3>New spices</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum architecto provident distinctio exercitationem ut consequatur</p>
+    </div>
+
+    <div class="card" data-aos="fade-up">
+        <h2>000</h2>
+        <h3>New combos</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum architecto provident distinctio exercitationem ut consequatur</p>
+    </div>
+</section>
+
+<div class="plate-before" data-aos="fade-up" id="menu">
+    <section class="plate" >
+        <h2 data-aos="fade-down">Brunch</h2>
+        <h3 data-aos="fade-down">ON YOUR PLATE</h3>
+        <div class="content">
+            <div class="left">
+                <div class="plat" data-aos="fade-right">
+                    <img src="image/champi.png" alt="Plat aux champignons" style="filter: drop-shadow(0 8mm 10mm rgb(46, 46, 46));">
+                    <div class="info">
+                        <h3>Tikka Chicken</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do.</p>
+                        <div class="price">
+                            <h3>$12.59</h3>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="plat" data-aos="fade-right">
+                    <img src="image/pain-bananes-petit.png" alt="Banane sur du pain" style="filter: drop-shadow(0 8mm 10mm rgb(46, 46, 46));">
+                    <div class="info">
+                        <h3>Tikka Chicken</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do.</p>
+                        <div class="price">
+                            <h3>$12.59</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right" data-aos="fade-left">
+                <h3>Specialties</h3>
+                <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit sed do</p>
+                <div class="price">
+                    <h3>$18.20</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<section class="traditional" >
+    <h2 data-aos="fade-up">Traditional Brunch Specialties</h2>
+    <p data-aos="fade-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In adipisci laudantium earum odio ipsa, iusto facilis? Eum ducimus eveniet adipisci voluptatem aut culpa. Tenetur quisquam</p>
+    <h3 data-aos="fade-up">...</h3>
+    <div class="more" data-aos="fade-up">
+        <p>Mesh</p>
+        <p>Spices</p>
+        <p>Food</p>
+        <p>Gallery</p>
+    </div>
+</section>
+
+<div class="transition" data-aos="fade-up">
+    <img data-aos="fade-up" src="image/pain-oeuf.png" alt="Pain avec 2 oeufs durs" style="filter: drop-shadow(0 8mm 10mm rgb(46, 46, 46));">
+</div>
+
+<section class="combos" id="combos">
+    <h2 data-aos="fade-up">...</h2>
+    <h3 data-aos="fade-up">Combos</h3>
+    <div class="exemples" data-aos="fade-up">
+        <div class="exemple">
+            <div class="logo"></div>
+            <h3>Combo specialties</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elitsed do oculis <span>$36.95</span></p>
+        </div>
+
+        <div class="exemple">
+            <div class="logo"></div>
+            <h3>Vegetarian Combo</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elitsed do oculis <span>$36.95</span></p>
+        </div>
+
+        <div class="exemple">
+            <div class="logo"></div>
+            <h3>Toast Combo</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elitsed do oculis <span>$36.95</span></p>
+        </div>
+    </div>
+    <button data-aos="fade-up"><span>ORDER NOW</span></button>
+</section>
+
+
+<section class="reduc">
+    <div class="sandwich" data-aos="fade-up"><img src="image/baguettes.png" alt="3 sandwich" style="filter: drop-shadow(0 -5mm 6mm rgb(29, 29, 29));"></div>
+    <div class="info" data-aos="fade-up">
+        <div class="test" >
+            <h2>30%<span>Off</span></h2>
+            <div class="date">
+                <h3>14 April</h3>
+                <h3>NEW OPENING</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="end" id="contact">
+    <div class="plat" data-aos="fade-up"><img src="image/pain-bananes.png" alt="Banane sur du pain" style="filter: drop-shadow(0 8mm 10mm rgb(46, 46, 46));"></div>
+    <h2 data-aos="fade-up">...</h2>
+    <h3 data-aos="fade-up">Brunch</h3>
+    <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, dolor, in ex magnam corporis cumque earum quidem expedita et dolore</p>
+    <div class="network" data-aos="fade-up">
+        <i class='bx bxl-pinterest-alt' ></i>
+        <i class='bx bxl-instagram' ></i>
+        <i class='bx bxl-twitter' ></i>
+        <i class='bx bxl-facebook' ></i>
+    </div>
+</section>
+
+<section class="newsletter">
+    <div class="left" >
+        <h3 data-aos="fade-right">About</h3>
+        <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim pariatur earum harum corrupti commodi officiis nam tempora consequatur consectetur. Explicabo, veritatis.</p>
+        <div class="contact" data-aos="fade-right">
+            <input type="email" name="email" placeholder="e-mail">
+            <button type="submit"><span>Subscribe</span></button>
+        </div>
+    </div>
+
+    <div class="right" >
+        <div class="info" data-aos="fade-left">
+            <h2 >Here We Are</h2>
+            <p>Spm At 737, Illinois</p>
+        </div>
+        <div class="info" data-aos="fade-left">
+            <h2>Here We Open</h2>
+            <p>Every day from.
+            <p>10am. - 11pm.</p>
+        </div>
+        <div class="info" data-aos="fade-left">
+            <h2>Call Us</h2>
+            <p>+94 1980 41404</p>
+        </div>
+        <div class="info" data-aos="fade-left">
+            <h2>Say Hello</h2>
+            <p>info@brunch.com</p>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <p>&copy; 2020 Brunch .All rights reserved</p>
+</footer>
+
+<a class="goTop" href="#head"></a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+
+  if (scrollPosition > 100) {
+    document.querySelector('.goTop').classList.add('show');
+  } else {
+    document.querySelector('.goTop').classList.remove('show');
+  }
+});
+
+
+function closeBack() {
+  var backToPortfolio = document.getElementById("closeBack");
+  backToPortfolio.classList.add("hidden");
+}
+
+
+</script>
+
+</body>
+</html>

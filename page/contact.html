@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="image/headLogo.png">
+    <title>Portfolio • DC Mathys</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="left"></div>
+        <div class="bot"></div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <h1>Mathys</h1>
+
+            <nav>
+                <input type="checkbox" id="check">
+                <ul>
+                    <a href="../index.html">Accueuil</a>
+                    <a href="about.html">A propos de moi</a>
+                    <a href="portfolio.html"><span>Portfolio</span></a>
+                    <a class="active" href="contact.html"><span>Me contacter</span></a>
+                </ul>
+                <a id="toggle-theme" class="icon-link"><i id="theme-icon" class="bx bx-moon"></i></a>
+                <label for="check" class="labelNav">
+                    <i class='bx bx-grid-alt' id="btn"></i>
+                    <i class='bx bx-x' id="cancel"></i>
+                </label>
+            </nav>
+            
+        </div>
+    </header>
+
+    <div class="contact">
+        <div class="title">
+            <h2>Commençons par parler de nos projets</h2>
+        </div>
+
+        <form action="" id="contact-form" onsubmit="sendEmail(event)">
+            <div class="contact-group">
+                <div class="contact-box">
+                    <input type="text" name="user" id="name" required placeholder="">
+                    <label for="name">Ton Nom</label>
+                </div>
+
+                <div class="contact-box">
+                    <input type="email" name="email" id="email" required placeholder="">
+                    <label for="email">Ton Email</label>
+                </div>
+            </div>
+
+            <div class="contact-area">
+                <textarea name="message" id="message" required placeholder=""></textarea>
+                <label for="message">Ton Message</label>
+            </div>
+
+            <button type="submit"><span>Envoyer</span></button>
+        </form>
+
+        <div id="notification" class="notification">Test</div>
+    </div>
+
+    <footer>
+        <div class="resume">
+            <h2>Mathys</h2>
+            <ul>
+                <a href="about.html">Propos de moi</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Me contacter</a>
+            </ul>
+            <div class="social">
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-twitter' ></i></a>
+                <a href=""><i class='bx bxl-linkedin-square' ></i></a>
+                <a href=""><i class='bx bxl-discord' ></i></a>
+            </div>
+        </div>
+        <p>@ All rights reserved by DC Mathys</p>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/contact.js"></script>
+
+</body>
+
+</html>

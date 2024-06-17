@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="image/headLogo.png">
+    <title>Portfolio • DC Mathys</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="left"></div>
+        <div class="bot"></div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <h1>Mathys</h1>
+
+            <nav>
+                <input type="checkbox" id="check">
+                <ul>
+                    <a href="index.html">Accueuil</a>
+                    <a href="page/about.html">A propos de moi</a>
+                    <a href="page/portfolio.html"><span>Portfolio</span></a>
+                    <a class="active" href="page/contact.html"><span>Me contacter</span></a>
+                </ul>
+                <a id="toggle-theme" class="icon-link"><i id="theme-icon" class="bx bx-moon"></i></a>
+                <label for="check" class="labelNav">
+                    <i class='bx bx-grid-alt' id="btn"></i>
+                    <i class='bx bx-x' id="cancel"></i>
+                </label>
+            </nav>
+            
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="on-profile-picture">
+            <div class="profile-picture">
+                <img src="image/profil.png" alt="Photo de présentation">
+            </div>
+        </div>
+
+        <div class="info">
+            <h2>DC Mathys</h2>
+            <p>Web Developer et Designer.</p>
+            <a class="button un" target="_blank" href="image/cv.pdf"><span>Télécharer CV</span></a>
+        </div>
+
+        <a class="button deux" target="_blank" href="image/cv.pdf"><span>Télécharer CV</span></a>
+
+        <div class="social">
+            <a target="_blank" href="https://github.com/RokasS01"><i class='bx bxl-github' ></i></a>
+            <a target="_blank" href="https://www.instagram.com/mathys_da_cunha/"><i class='bx bxl-linkedin-square' ></i></a>
+            <a target="_blank" href="https://www.discordapp.com/users/290935633076027392"><i class='bx bxl-discord' ></i></a>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="title">
+            <h2>Mes projets les plus récents</h2>
+        </div>
+        <div class="projets">
+            <a href="page/portfolio/brunch/index.html" class="projet">
+                <div class="image"><img src="image/maquettes/brunch.jpg" alt=""></div>
+                <h3>Web development - Brunch</h3>
+                <p>HTML/CSS - JS</p>
+            </a>
+            <a href="page/portfolio/yoga/index.html" class="projet">
+                <div class="image"><img src="image/maquettes/yoga.jpg" alt=""></div>
+                <h3>Web development - Yoga</h3>
+                <p>HTML/CSS - JS</p>
+            </a>
+            <a href="page/portfolio/italian/index.html" class="projet">
+                <div class="image"><img src="image/maquettes/pizza.jpg" alt=""></div>
+                <h3>Web development - Pizza</h3>
+                <p>HTML/CSS - JS</p>
+            </a>
+            <a onclick="choplifter_show()" class="projet">
+                <div class="image"><img src="image/maquettes/natural.jpg" alt=""></div>
+                <h3>Web design - Choplifter</h3>
+                <p>Figma</p>
+            </a>
+            <a href="page/portfolio/dashboard/index.html" class="projet">
+                <div class="white image"><img src="image/maquettes/dashboard.png" alt=""></div>
+                <h3>Fullstack - Dashboard</h3>
+                <p>HTML/CSS - JS</p>
+            </a>
+            <a href="page/portfolio/casino/index.html" class="projet">
+                <div class="white image"><img src="image/maquettes/casino.png" alt=""></div>
+                <h3>Web development - Casino</h3>
+                <p>HTML/CSS - JS</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="presentation">
+        <h2>Mes services</h2>
+        <div class="cards">
+            <div class="card">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Web Developer</h3>
+                <p>Je maîtrise le développement web avec HTML, CSS, JavaScript et PHP pour créer des applications dynamiques et performantes.</p>
+                <a href="page/portfolio.html"><button><span>Mes projets</span></button></a>
+
+                <!-- <div class="more">
+                    <h4>BLABLA</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi hic ut asperiores rerum minima. Culpa rem.</p>
+                    <button><span>Fermer</span></button>
+                </div> -->
+            </div>
+            <div class="card">
+                <i class='bx bx-pen' ></i>
+                <h3>Web Designer</h3>
+                <p>Je transforme mes idées en réalité visuelle avec Figma et Blender, en concevant des interfaces intuitives et esthétiques.</p>
+                <a href="page/about.html"><button><span>En savoir plus</span></button></a>
+            </div>
+            <div class="card">
+                <i class='bx bx-layout'></i>
+                <h3>Interfaces UI/UX</h3>
+                <p>Je crée des expériences utilisateur mémorables en harmonisant fonctionnalité et design, centrées sur les besoins de l'utilisateur.</p>
+                <a href="page/contact.html"><button><span>Me contacter</span></button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Parlons de notre projet</h2>
+        <a href="page/contact.html"><button><span>Me contacter</span></button></a>
+    </section>
+
+    <footer>
+        <div class="resume">
+            <h2>Mathys</h2>
+            <ul>
+                <a href="page/about.html">Propos de moi</a>
+                <a href="page/portfolio.html">Portfolio</a>
+                <a href="page/contact.html">Me contacter</a>
+            </ul>
+            <div class="social">
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-twitter' ></i></a>
+                <a href=""><i class='bx bxl-linkedin-square' ></i></a>
+                <a href=""><i class='bx bxl-discord' ></i></a>
+            </div>
+        </div>
+        <p>@ All rights reserved by DC Mathys</p>
+    </footer>
+
+
+    <div class="choplifter-background" id="choplifter-background">
+        <label class="close" onclick="choplifter_hide()"><i class='bx bx-x'></i></label>
+        <section class="choplifter" id="choplifter">
+            <div class="choplifter-content">
+                <div class="title"><h1>CHOPLIFTER Web Design</h1></div>
+        
+                    <div class="profile" id="profile">
+                        <div class="left">
+                            <div class="pp"><img src="image/profil.png" alt=""></div>
+                            <div class="bot">
+                                <h2>Da Cunha Mathys</h2>
+                                <h3>Web design</h3>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="like" id="like"><i class='bx bx-heart'></i></div>
+                            <button><a href="image/choplifter/CHOPLIFTER.fig">Download</a></button>
+                        </div>
+                    </div>
+                
+                <div class="gallery">
+                    <div class="caroussel"><img id="mainImage" src="../image/choplifter/caroussel.jpg" alt="" class="image-transition"></div>
+                    <div class="images">
+                        <div class="image active" onclick="changeImage('image/choplifter/caroussel.jpg', this)"><img src="image/choplifter/caroussel.jpg" alt=""></div>
+                        <div class="image" onclick="changeImage('image/choplifter/page-1.jpg', this)"><img src="image/choplifter/page-1.jpg" alt=""></div>
+                        <div class="image" onclick="changeImage('image/choplifter/page-2.jpg', this)"><img src="image/choplifter/page-2.jpg" alt=""></div>
+                        <div class="image" onclick="changeImage('image/choplifter/page-3.jpg', this)"><img src="image/choplifter/page-3.jpg" alt=""></div>
+                        <div class="image" onclick="changeImage('image/choplifter/page-4.jpg', this)"><img src="image/choplifter/page-4.jpg" alt=""></div>
+                    </div>
+                    <div class="desc"><p>Nous avons conçu un design pour présenter un projet en Python : la refonte de Choplifter, jeu des années 80, mêlant modernité, rétro, nouveautés. Nouvelle fonctionnalité, UI agréable, compétitivité intégrées.</p></div>
+                </div>
+                
+                <div class="presentation">
+                    <div class="part">
+                        <h2>Lien du projet fait en python</h2>
+                        <a href="https://github.com/LuDoSniper/Choplifter" target="_blank">https://github.com/LuDoSniper/Choplifter</a>
+                    </div>
+                    <div class="part">
+                        <h2 style="text-transform: uppercase;">Live Site</h2>
+                        <h3>Objectif</h3>
+                        <p>Notre site vise à présenter le projet, à immerger l'utilisateur dans son univers, à explorer les différents maps pour comprendre le gameplay après le téléchargement du jeu. Il permet également d'accéder au launcher pour installer le jeu, tout en offrant un marché pour des vêtements, des tasses, etc. Visuellement attrayant, il incite au téléchargement et à l'exploration.</p>
+                    </div>
+                </div>
+                
+                <div class="full">
+                    <h2>Website en entier</h2>
+                    <div class="maquette">
+                        <img src="image/choplifter/maquette.png" alt="">
+                    </div>
+                    <div class="desc"><p>Nous créons de belles expériences pour nos clients, cherchant l'innovation et l'inspiration dans tous nos projets.</p></div>
+                </div>
+
+                <div class="video-container">
+                    <video controls>
+                        <source src="image/choplifter/choplifter.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+    </div>  
+
+</body>
+<script src="js/script.js"></script>
+</html>
